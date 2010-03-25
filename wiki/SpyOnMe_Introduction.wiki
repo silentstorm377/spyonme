@@ -21,10 +21,10 @@ No installation needed and possible. Copy the script elsewhere, check/edit few p
 
 <pre>xwd command (this is what is doing the screenshot ) triggers quite annoying pc speaker beeps.
 To eliminate them:
- # check the module pcspkr is loaded:
+ 1. check the module pcspkr is loaded:
  $lsmod | grep pcspkr
 If it is:
- # rmmod pcspkr # as temporary soluction
- # add "blacklist pcspkr" line to your /etc/modprobe.d/blacklist file as permanent solution
+ 2. rmmod pcspkr # as temporary soluction
+ 3. add "blacklist pcspkr" line to your /etc/modprobe.d/blacklist file as permanent solution
 
 If not... than the module might be compiled directly to kernel and I'm not sure what to do with this... (:</pre>
